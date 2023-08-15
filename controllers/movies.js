@@ -1,7 +1,7 @@
 const Movie = require('../models/movie');
-const NotFoundError = require('../errors/not-found-error');
-const InvalidRequest = require('../errors/invalid-request');
-const Forbidden = require('../errors/forbidden-error');
+const NotFoundError = require('../constants/errors/not-found-error');
+const InvalidRequest = require('../constants/errors/invalid-request');
+const Forbidden = require('../constants/errors/forbidden-error');
 
 const updateCfg = {
   new: true, // обработчик then получит на вход обновлённую запись
